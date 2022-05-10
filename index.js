@@ -51,5 +51,5 @@ module.exports = (template, n = 1) => {
     })
     records.push(randomValues)
   })
-  return records
+  return n === 1 ? records[0] : records
 }
